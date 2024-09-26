@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.io.*;
 
 public class numeroSecreto {
     public static void main(String[] args) {
