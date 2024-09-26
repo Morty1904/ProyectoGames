@@ -13,15 +13,15 @@ public class numeroSecreto {
         System.out.println("Intenta adivinar el numero secreto! (pista: esta entre el 0 y el 100)");
 
 
-        while (!haAcertado) { //usamos while para que siga pidiendo el numero hasta que acierte 
+        while (!haAcertado) { //Usamos while para que siga pidiendo el numero hasta que acierte 
             try {
                 System.out.println("Introduce tu numero o pulsa 's' para reiniciar la partida ");
                 String valorEntrada = input.next();
 
-                if (valorEntrada.equals("s")) { //Para reiniciar 
+                if (valorEntrada.equals("s")) { //Para reiniciar el juego
                     
                     numSecreto = (int) (Math.random() * 100); //Con esto sacamos un nuevo numero aleatorio al reiniciarlo
-                    intentos = 0;
+                    intentos = 0; // Y reiniciamos los intentos
                     System.out.println("Empiezas de nuevo (RECUERDA: esta entre el 0 y el 100)");
                 } else {
 
@@ -31,15 +31,15 @@ public class numeroSecreto {
 
                         if (numElegido < numSecreto) { //Comprueba si el numero que nos dan es menor al numero secreto
                             System.out.println("El numero secreto es mayor");
-                            System.out.println("Llevas " + intentos + " intento/s");
+                            System.out.println("Llevas " + intentos + " intento/s"); //Y se le suma los intentos
                         } else if (numElegido > numSecreto) { //Comprueba si el numero que nos dan es mayor al numero secreto
                             System.out.println("El numero secreto es menor");
                             System.out.println("Llevas " + intentos + " intento/s");
-                        } else {
+                        } else {  //Si no es mayor o menor ha acertado
                             System.out.println("¡¡Has acertado!! El numero secreto era " + numSecreto);
                             System.out.println("Lo has conseguido en " + intentos + " intento/s");
 
-                            haAcertado = true; // cuando lo acierte para parar el bucle
+                            haAcertado = true; // Cuando lo acierte para parar el bucle
                         }
                     }
                 }
