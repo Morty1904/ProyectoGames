@@ -1,8 +1,6 @@
 # ProyectoGames
 Junto a Lara Gutiérrez
 
-
-<<<<<<< HEAD
 ## INSTRUCCIONES
 
 
