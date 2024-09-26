@@ -21,4 +21,5 @@ Introduce letra a letra (en miniscula) para adivinar la palabra. Tienes un núme
  Introduce un número e intenta adivinarlo siguiendo las pistas que te dan, sabrás si es menor o menor y cuantos intentos llevas. No se permiten letras ni números que no estén entre del 0 al 100.
 
 
- #####                                           ¡SUERTE!
+ <p align="center">#¡SUERTE!
+ </p>
