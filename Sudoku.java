@@ -41,6 +41,7 @@ public class Sudoku {
             } else {
                 System.out.println("Movimiento inválido. Intenta de nuevo."); // Mensaje de error
             }
+        scanner.close();
         }
     }
 
