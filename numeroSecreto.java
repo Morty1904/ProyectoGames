@@ -7,7 +7,7 @@ public class numeroSecreto {
         int intentos = 0;
         boolean haAcertado = false;
 
-        numSecreto = (int) (Math.random() * 100);
+        numSecreto = (int) (Math.random() * 100+1);
         
         //Aqui le pedimos al usuario que meta el numero
         System.out.println("Intenta adivinar el numero secreto! (pista: esta entre el 0 y el 100)");
@@ -20,7 +20,7 @@ public class numeroSecreto {
 
                 if (valorEntrada.equals("s")) { //Para reiniciar el juego
                     
-                    numSecreto = (int) (Math.random() * 100); //Con esto sacamos un nuevo numero aleatorio al reiniciarlo
+                    numSecreto = (int) (Math.random() * 100+1); //Con esto sacamos un nuevo numero aleatorio al reiniciarlo
                     intentos = 0; // Y reiniciamos los intentos
                     System.out.println("Empiezas de nuevo (RECUERDA: esta entre el 0 y el 100)");
                 } else {
