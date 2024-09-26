@@ -22,4 +22,3 @@ Introduce letra a letra (en miniscula) para adivinar la palabra. Tienes un núme
 
  <p align="center">¡SUERTE!
  </p>
-=======
