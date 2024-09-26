@@ -29,7 +29,7 @@ public class Ahorcado {
                 "gusano", "sanguijuela", "pulga", "piojo", "cucaracha", "mosquito", "mosca", "ciempies", "caracol",
                 "babosa", "lombriz", "foca", "lobo", "foca", "morsa", "tortuga", "iguana", "serpiente", "cocodrilo",
                 "lagarto", "camaleón" };
-        String palabra = Palabras[random.nextInt(20)];
+        String palabra = Palabras[random.nextInt(220)];
         boolean[] letrasAdivinadas = new boolean[palabra.length()];
         int contador = 0;
         while (contador < 6) {
