@@ -9,7 +9,7 @@ public class Conecta4 {
 
     public static void main(String[] args) {
         inicializarTablero(); // Inicializa el tablero vacío
-        boolean juegoTerminado = false; // Bandera para saber si el juego ha terminado
+        boolean juegoTerminado = false; // flag para saber si el juego ha terminado
         Scanner scanner = new Scanner(System.in);
 
         // Bucle principal del juego
@@ -81,7 +81,11 @@ public class Conecta4 {
 
     // Cambia el turno al otro jugador
     private static void cambiarTurno() {
-        jugadorActual = (jugadorActual == 'X') ? 'O' : 'X'; // Alterna entre 'X' y 'O'
+        if (jugadorActual == 'X') {
+            jugadorActual = 'O';
+        } else {
+            jugadorActual = 'X';
+        }
     }
 
     /*
